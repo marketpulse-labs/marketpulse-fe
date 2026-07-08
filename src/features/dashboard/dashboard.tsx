@@ -5,15 +5,16 @@ import { useDashboard } from "./hooks";
 
 const fallback = {
   metrics: [
-    { key: "dashboard_p95_ms", label: "dashboard p95 ms", value: 184, unit: "ms", target: 220 },
-    { key: "event_ingest_rate", label: "event ingest rate", value: 92, unit: "%", target: 90 },
-    { key: "chart_render_ms", label: "chart render ms", value: 37, unit: "events", target: 30 },
+    { key: "price_alerts", label: "price alerts", value: 17, unit: "items", target: 20 },
+    { key: "stockout_risk", label: "stockout risk", value: 8, unit: "skus", target: 10 },
+    { key: "margin_watch", label: "margin watch", value: 12, unit: "%", target: 15 }
   ],
   events: [
-    { id: "evt-1", title: "product dashboard", status: "requested", severity: "high", updatedAt: "2026-07-08" },
-    { id: "evt-2", title: "price snapshots", status: "approved", severity: "medium", updatedAt: "2026-07-08" },
+    { id: "prd-884", title: "Coupon price drift", status: "watching", severity: "high", updatedAt: "2026-07-08" },
+    { id: "prd-552", title: "Inventory reorder point", status: "queued", severity: "medium", updatedAt: "2026-07-08" },
+    { id: "prd-491", title: "Competitor price rebound", status: "reviewed", severity: "low", updatedAt: "2026-07-07" }
   ],
-  trend: [{ day: "Mon", value: 12 }, { day: "Tue", value: 18 }, { day: "Wed", value: 33 }, { day: "Thu", value: 27 }, { day: "Fri", value: 41 }],
+  trend: [{ day: "Mon", value: 42 }, { day: "Tue", value: 47 }, { day: "Wed", value: 35 }, { day: "Thu", value: 58 }, { day: "Fri", value: 63 }],
 } as const;
 
 export const Dashboard = () => {
