@@ -1,6 +1,7 @@
 # MarketPulse FE
 
-![React](https://img.shields.io/badge/React-18-61dafb?logo=react)
+![React](https://img.shields.io/badge/React-19-61dafb?logo=react)
+![React Compiler](https://img.shields.io/badge/React_Compiler-enabled-149eca)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
 ![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite)
 ![D3](https://img.shields.io/badge/Chart-D3-f9a03c)
