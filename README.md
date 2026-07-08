@@ -1,5 +1,10 @@
 # MarketPulse FE
 
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite)
+![D3](https://img.shields.io/badge/Chart-D3-f9a03c)
+
 상품 가격, 재고, 상품 이벤트를 운영자가 한 화면에서 확인하는 React 대시보드입니다.
 
 ## 기능
