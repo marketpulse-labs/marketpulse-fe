@@ -1,11 +1,39 @@
 # MarketPulse FE
 
-React/TypeScript product frontend for commerce product analytics.
+상품 가격, 재고, 상품 이벤트를 운영자가 한 화면에서 확인하는 React 대시보드입니다.
 
-## Resume proof points
+## 기능
 
-- Shared HTTP layer uses `ky.create` with auth refresh hooks in `src/shared/api/client.ts`.
-- D3 chart rendering is isolated in `src/features/chart/d3-trend.ts`.
-- jQuery/Ajax legacy compatibility is represented by `src/features/legacy/jquery-adapter.ts`.
-- TanStack Query manages dashboard cache invalidation and mutations.
-- Playwright smoke test covers the primary product workflow.
+- 가격 변동 alert metric
+- 재고 위험 상품 목록
+- D3 기반 가격/재고 추세 차트
+- `ky` 공통 API client
+- TanStack Query 기반 dashboard cache
+- jQuery/Ajax adapter 예시
+
+## 구조
+
+```text
+src/features/dashboard/api.ts
+src/features/dashboard/hooks.ts
+src/features/dashboard/types.ts
+src/features/dashboard/dashboard.tsx
+src/features/chart/d3-trend.ts
+src/features/legacy/jquery-adapter.ts
+src/shared/api/client.ts
+```
+
+## 실행
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run test:e2e
+```
+
+## 환경 변수
+
+```bash
+VITE_API_URL=http://localhost:8000/api
+```
